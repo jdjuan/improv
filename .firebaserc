@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "improv-c2c2c": {
+      "hosting": {
+        "improv": [
+          "improv-c2c2c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "improv-c2c2c"
+  }
+}
