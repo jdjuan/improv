@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "improv:build:production",
+            "firebaseProject": "improv-c2c2c",
+            "firebaseHostingSite": "improv-c2c2c"
+          }
         }
       }
     }
