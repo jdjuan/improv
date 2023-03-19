@@ -17,7 +17,13 @@ export class AppComponent {
     console.log('Loading...');
     const body = {
       model: 'gpt-3.5-turbo',
-      messages: [{ role: 'user', content: 'What is the OpenAI mission? Be super concise' }],
+      messages: [
+        {
+          role: 'user',
+          content:
+            'Return the top ten most influential artists and the year they were born in JSON format. Do not return anything else. Avoid comments. Just like an API would work',
+        },
+      ],
     };
     const headers = { Authorization: `Bearer ${this.openAIKey}`, 'Content-Type': 'application/json' };
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
